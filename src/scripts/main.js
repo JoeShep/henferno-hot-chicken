@@ -3,11 +3,16 @@ import {
   makeMenuItemComponent,
   listMenuItems,
   listHeatItems,
-  makeHeatLevelComponent
+  makeHeatLevelComponent,
+  buildForm,
+  addFormToDOM
 } from "./domstuff.js"
-import "./form.js"
+import { initializeOrderListener } from "./form.js"
 
 console.log("This is main")
+addFormToDOM(buildForm())
+initializeOrderListener()
+
 getMenuItems()
 .then ( menuItems => {
   console.log(menuItems)

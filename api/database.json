@@ -62,6 +62,12 @@
       "heat_level_id": 4,
       "user": "Showoff Jones",
       "id": 3
+    },
+    {
+      "menu_item_id": 5,
+      "heat_level_id": 4,
+      "user": "Fred",
+      "id": 4
     }
   ]
 }
