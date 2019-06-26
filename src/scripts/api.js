@@ -3,4 +3,9 @@ function getMenuItems() {
   .then( menuData => menuData.json() )
 }
 
-export {getMenuItems}
+function getHeatLevels() {
+  return fetch("http://localhost:8088/heat_levels")
+  .then( heatData => heatData.json() )
+}
+
+export {getMenuItems, getHeatLevels}
