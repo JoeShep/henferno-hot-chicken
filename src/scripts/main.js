@@ -5,6 +5,7 @@ import {
   listHeatItems,
   makeHeatLevelComponent
 } from "./domstuff.js"
+import "./form.js"
 
 console.log("This is main")
 getMenuItems()

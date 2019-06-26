@@ -44,5 +44,24 @@
       "name": "deadly"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "menu_item_id": 3,
+      "heat_level_id": 3,
+      "user": "Cohort 33",
+      "id": 1
+    },
+    {
+      "menu_item_id": 5,
+      "heat_level_id": 1,
+      "user": "Loser Dude",
+      "id": 2
+    },
+    {
+      "menu_item_id": 2,
+      "heat_level_id": 4,
+      "user": "Showoff Jones",
+      "id": 3
+    }
+  ]
 }

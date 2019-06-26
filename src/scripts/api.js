@@ -8,4 +8,12 @@ function getHeatLevels() {
   .then( heatData => heatData.json() )
 }
 
-export {getMenuItems, getHeatLevels}
+function addOrder(newOrderObj) {
+  return fetch("http://localhost:8088/orders", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newOrderObj)
+  })
+}
+
+export {getMenuItems, getHeatLevels, addOrder}

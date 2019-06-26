@@ -1,6 +1,6 @@
 function makeMenuItemComponent(menuItem) {
   return `
-    <li><img><h3>${menuItem.name}: ${menuItem.price}</h3><button>order</button></li>
+    <li><img><label for="menu-item-${menuItem.id}"><input id="menu-item-${menuItem.id}" type="radio" name="menu-item" value=${menuItem.id}><h3>${menuItem.name}: ${menuItem.price}</h3></label></li>
   `
 }
 
@@ -12,7 +12,7 @@ function listMenuItems(menuComponents) {
 
 function makeHeatLevelComponent(heatObj) {
   return `
-    <li><input type="radio" name="heat"><h3>${heatObj.name}</h3></li>
+    <li><label for="heat-level-${heatObj.id}"><input id="heat-level-${heatObj.id}" type="radio" name="heat" value=${heatObj.id}><h3>${heatObj.name}</h3></label></li>
   `
 }
 
