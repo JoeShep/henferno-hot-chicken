@@ -68,6 +68,18 @@
       "heat_levelId": 4,
       "user": "Fred",
       "id": 4
+    },
+    {
+      "menu_itemId": 1,
+      "heat_levelId": 1,
+      "user": "ferd",
+      "id": 5
+    },
+    {
+      "menu_itemId": 4,
+      "heat_levelId": 2,
+      "user": "Gumbo Smith",
+      "id": 6
     }
   ]
 }
