@@ -1,11 +1,25 @@
-function getMenuItems() {
-  return fetch("http://localhost:8088/menu_items")
-  .then( menuData => menuData.json() )
-}
+// function getMenuItems() {
+//   return fetch("http://localhost:8088/menu_items")
+//   .then( menuData => menuData.json() )
+// }
 
-function getHeatLevels() {
-  return fetch("http://localhost:8088/heat_levels")
-  .then( heatData => heatData.json() )
+// function getHeatLevels() {
+//   return fetch("http://localhost:8088/heat_levels")
+//   .then( heatData => heatData.json() )
+// }
+
+// function getOrders() {
+//   return fetch("http://localhost:8088/orders")
+//   .then( orderData => orderData.json() )
+// }
+
+function getData(resource, queryParams) {
+  let url = `http://localhost:8088/${resource}`
+  if (queryParams) {
+    url += `?${queryParams}`
+  }
+  return fetch(url)
+  .then( data => data.json() )
 }
 
 function addOrder(newOrderObj) {
@@ -16,4 +30,4 @@ function addOrder(newOrderObj) {
   })
 }
 
-export {getMenuItems, getHeatLevels, addOrder}
+export {getData, addOrder}
